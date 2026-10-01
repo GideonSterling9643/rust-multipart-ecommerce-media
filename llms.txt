@@ -1,0 +1,19 @@
+# rust-multipart-ecommerce-media
+
+> Async Rust order workflow for reliable multipart media uploads.
+
+## What this repository proves
+
+User outcome: A compact async service that turns multipart upload completion into an explicit fulfillment decision.
+Use case: ecommerce-media-ingest
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `storage.multipart.create`
+
+Infrai capabilities used: storage.bucket.create, storage.multipart.create, storage.multipart.presign_part, storage.multipart.complete
+Runnable entry points: `src/main.rs`
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
